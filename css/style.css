@@ -48,6 +48,7 @@ header h1 {
 
 /* ------------    Estilos main   ------------ */
 .card-container {
+  min-height: 80vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -55,7 +56,7 @@ header h1 {
 }
 
 .card {
-  width: 40rem;
+  width: 35rem;
   height: 65rem;
   display: flex;
   flex-direction: column;
@@ -90,7 +91,7 @@ header h1 {
 .profile-picture {
   position: absolute;
   top: 75%;
-  left: 36%;
+  left: 33%;
   z-index: 1;
 }
 
@@ -140,7 +141,7 @@ footer p {
   flex-basis: 80%;
   padding: 1.6rem 0 1.6rem;
   font-weight: 400;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   color: #fff9f9;
 }
 
