@@ -106,48 +106,63 @@ main {
   flex-direction: column;
   align-items: center;
 }
-.form-container form button {
-  width: 30rem;
-  height: 6rem;
-  background: #1cd1b0;
-  border-radius: 2.3011rem;
-  font-weight: 700;
-  font-size: 3rem;
-  text-align: center;
-  margin: 2rem;
-}
-.info-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+
+.form-container label {
+  margin: 0.2rem;
+  font-size: 1.5rem;
 }
 
 .superior-box {
   display: flex;
   flex-direction: column;
+  align-items: center;
+}
+
+.info-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
 }
 
 .title-left {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  flex-basis: 50%;
   margin: 2rem;
 }
-
-.title-left label{
-  margin: 0.2rem;
-}
-
 .title-right {
   display: flex;
   flex-direction: column;
+  flex-basis: 50%;
+}
+
+.beauty-box {
+  width: 30rem;
+  height: 5rem;
+  background: #ffffff;
+  border: 0.1rem solid rgba(0, 0, 0, 0.1);
+  border-radius: 15.3407px;
+  margin-top: 1rem;
+  padding: 0 1rem;
+}
+
+.form-container form button {
+  width: 30rem;
+  height: 6rem;
+  background-color: #1cd1b0;
+  border-radius: 2.3011rem;
+  font-weight: 700;
+  font-size: 3rem;
+  text-align: center;
   margin: 2rem;
 }
 
-.title-right label{
-  margin: 0.2rem;
+.form-container form button:focus {
+  background-color: #001d2d;
+  color: #ffffff;
 }
-
 
 /* ------------   Estilos footer  ------------ */
 footer {
@@ -175,6 +190,9 @@ footer img {
 /* ------------   Media Queries ------------ */
 /* Tablet */
 @media screen and (min-width: 460px) {
+  .form-container {
+    padding: 0 6rem;
+  }
   .info-container {
     flex-direction: row;
   }
