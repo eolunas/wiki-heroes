@@ -17,7 +17,7 @@ html {
   display: flex;
   align-items: center;
   justify-content: left;
-  background-color: #1CD1B0;
+  background-color: #1cd1b0;
 }
 .discount-banner p {
   font-weight: 400;
@@ -51,32 +51,11 @@ header h1 {
   font-size: 3rem;
   color: #ffffff;
 }
-.float-menu {
-  position: absolute;
-  top: 90vh;
-  right: 0;
-  z-index: 2;
-  background-color: #00669f;
-  box-shadow: 0 1rem 0.7rem rgba(0, 0, 0, 0.25);
-  border-radius: 50%;
-  width: 60px;
-  height: 60px;
-}
-.float-menu:hover {
-  background-color: #001D2D;
-}
-.float-menu p {
-  display: inline-block;
-  color: #ffffff;
-  font-size: 5rem;
-  position: relative;
-  top: -3%;
-  left: 26%;
-}
+
 /* ------------  Estilos nav menu ------------ */
 nav {
   height: 3rem;
-  background-color: #001D2D;
+  background-color: #001d2d;
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -93,93 +72,22 @@ nav ul a {
   color: #ffffff;
 }
 /* ------------    Estilos main   ------------ */
-.card-container {
+main {
+  display: flex;
+  justify-content: center;
+}
+.form-container {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
+  background-color: #00669F;
+  border-radius: 3rem;
   margin: 3rem 0;
 }
 
-.card {
-  width: 30rem;
-  height: 56rem;
-  background-color: #f3f3f3;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  margin: 5rem 0;
-}
 
-.card-cover {
-  position: relative;
-  top: -2.5rem;
-}
-
-.card-cover i {
-  position: absolute;
-  top: 3rem;
-  left: 2rem;
-  color: red;
-  z-index: 1;
-}
-
-.card-cover img {
-  height: 100%;
-  width: 100%;
-  border-radius: 3rem 3em 0 0;
-}
-
-.first-profile {
-  display: none;
-}
-
-.profile-picture {
-  position: absolute;
-  top: 65%;
-  left: 33%;
-  z-index: 1;
-}
-
-.profile-picture img {
-  max-width: 10rem;
-  max-height: 10rem;
-  border-radius: 50%;
-}
-
-.character-name {
-  font-weight: 400;
-  font-size: 3rem;
-  color: #000000;
-}
-
-.character-description {
-  margin: 0 2rem;
-  font-weight: 400;
-  font-size: 1.6rem;
-  color: #333333;
-}
-
-.view-more-button {
-  background-color: #00669f;
-  font-weight: 400;
-  font-size: 1.5rem;
-  color: #f3f3f3;
-  padding: 1.5rem 3.6rem;
-  border: none;
-  margin-bottom: 4rem;
-}
-
-.view-more-button:hover {
-  background-color: #001D2D;
-}
-
-.toggle-visible {
-  display: none;
-}
 /* ------------   Estilos footer  ------------ */
 footer {
   display: flex;
@@ -206,10 +114,6 @@ footer img {
 /* ------------   Media Queries ------------ */
 /* Tablet */
 @media screen and (min-width: 460px) {
-  .float-menu {
-    top: 83vh;
-    right: 1%;
-   }
   .card-container {
     flex-direction: row;
   }
@@ -225,5 +129,3 @@ footer img {
     display: none;
   }
 }
-
-
