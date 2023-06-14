@@ -30,17 +30,127 @@
     <nav>
       <ul>
         <a href="#"><li>Contacto</li></a>
-        <a href="#"
-          ><li></li>
-          Registrarme</a
-        >
+        <a href="#"><li>Registrarme</li></a>
         <a href="#"><li>Ingresar</li></a>
       </ul>
     </nav>
     <main>
       <section class="form-container">
-        <form action="add-hero">
-          <label for="name">Nombre <input type="text" /></label>
+        <h2>Añadí tu Super!</h2>
+        <p>Agregá tu personaje favorito completando las opciones.</p>
+        <form action="form.html">
+          <div class="superior-box">
+            <!-- Nombre -->
+            <div class="title-left">
+              <label for="name">*Nombre</label>
+              <input type="text" name="name" id="name" required="" />
+            </div>
+            <!-- Especie -->
+            <div class="title-right">
+              <label for="especie">*Especie</label>
+              <select name="Especie" id="especie">
+                <option value="Batman">Batman</option>
+                <option value="Harley-Queen">Harley Queen</option>
+                <option value="Superman">Superman</option>
+                <option value="Mujer-Maravilla">Mujer Maravilla</option>
+              </select>
+            </div>
+          </div>
+          <div class="info-container">
+            <div class="form-left">
+              <!-- Fecha -->
+              <div class="title-left">
+                <label for="fecha">Fecha</label>
+                <input type="date" name="fecha" id="fecha" />
+              </div>
+
+              <!-- Descripcion -->
+              <div class="title-left">
+                <label for="descripcion"></label>
+                <textarea
+                  name="descripcion"
+                  id="descripcion"
+                  cols="30"
+                  rows="14"
+                  placeholder="Descripción"
+                ></textarea>
+              </div>
+            </div>
+            <div class="form-rigth">
+              <!-- Archivos -->
+              <div class="title-right">
+                <label for="archivos">Agregar Foto</label>
+                <input type="file" name="archivos" id="archivos" />
+              </div>
+
+              <!-- Poderes -->
+              <div class="title-right">
+                <p>Poderes</p>
+                <label for="volar">
+                  <input
+                    type="checkbox"
+                    name="Poderes"
+                    id="volar"
+                    value="volar"
+                  />
+                  Volar
+                </label>
+                <label for="superInteligencia">
+                  <input
+                    type="checkbox"
+                    name="Poderes"
+                    id="superInteligencia"
+                    value="superInteligencia"
+                  />
+                  SuperInteligencia
+                </label>
+                <label for="vistaLaser">
+                  <input
+                    type="checkbox"
+                    name="Poderes"
+                    id="vistaLaser"
+                    value="vistaLaser"
+                  />
+                  Vista de rayo láser
+                </label>
+                <label for="billeteraGorda">
+                  <input
+                    type="checkbox"
+                    name="Poderes"
+                    id="billeteraGorda"
+                    value="billeteraGorda"
+                  />
+                  Billetera gorda
+                </label>
+              </div>
+
+              <hr />
+              <!-- Personaje -->
+              <div class="title-right">
+                <p>Tipo de Personaje</p>
+                <label for="personaje">
+                  <input
+                    type="radio"
+                    name="personaje"
+                    id="personaje"
+                    value="heroeHeroina"
+                  />
+                  Héroe / Heroina
+                </label>
+
+                <label for="personaje">
+                  <input
+                    type="radio"
+                    name="personaje"
+                    id="personaje"
+                    value="villanoVillana"
+                  />
+                  Villano / Villana
+                </label>
+              </div>
+            </div>
+          </div>
+          <button type="submit">Añadir</button>
         </form>
       </section>
     </main>

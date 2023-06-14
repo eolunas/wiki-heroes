@@ -81,10 +81,71 @@ main {
   flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
-  background-color: #00669F;
+  justify-content: center;
+  background-color: #00669f;
   border-radius: 3rem;
+  color: #ffffff;
+  font-family: "Inter";
+  font-style: normal;
   margin: 3rem 0;
+}
+.form-container h2 {
+  display: inline-block;
+  color: #fbfffd;
+  font-weight: 700;
+  font-size: 3.3rem;
+  margin-top: 2rem;
+}
+.form-container p {
+  font-weight: 300;
+  font-size: 2rem;
+  margin: 2rem;
+}
+.form-container form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.form-container form button {
+  width: 30rem;
+  height: 6rem;
+  background: #1cd1b0;
+  border-radius: 2.3011rem;
+  font-weight: 700;
+  font-size: 3rem;
+  text-align: center;
+  margin: 2rem;
+}
+.info-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.superior-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.title-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 2rem;
+}
+
+.title-left label{
+  margin: 0.2rem;
+}
+
+.title-right {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem;
+}
+
+.title-right label{
+  margin: 0.2rem;
 }
 
 
@@ -114,18 +175,11 @@ footer img {
 /* ------------   Media Queries ------------ */
 /* Tablet */
 @media screen and (min-width: 460px) {
-  .card-container {
+  .info-container {
     flex-direction: row;
   }
-  .toggle-visible {
-    display: flex;
-  }
-
-  .first-profile {
-    display: flex;
-  }
-
-  .second-profile {
-    display: none;
+  .superior-box {
+    flex-direction: row;
+    align-items: center;
   }
 }
